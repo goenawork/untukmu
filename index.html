@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A little place made for you, to be opened when you're 17.">
+  <title>For You, When You're 17</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero" id="top">
+      <div class="grain" aria-hidden="true"></div>
+
+      <nav class="nav">
+        <a class="brand" href="#top">A LITTLE TIME CAPSULE</a>
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">A letter through time</p>
+
+        <h1 class="reveal delay-1">
+          For you,<br>
+          <em>when you're 17.</em>
+        </h1>
+
+        <p class="intro reveal delay-2">
+          A little place I made for you,<br>
+          long before you knew it existed.
+        </p>
+
+        <button class="enter-button reveal delay-3" id="enterButton">
+          <span>Enter your story</span>
+          <span class="arrow">↓</span>
+        </button>
+      </div>
+
+      <div class="year-mark reveal delay-3">
+        <span>STARTED</span>
+        <strong>2026</strong>
+      </div>
+
+      <div class="scroll-note">
+        <span class="line"></span>
+        <span>scroll slowly</span>
+      </div>
+    </section>
+
+    <section class="welcome section" id="story">
+      <div class="section-number">01</div>
+
+      <div class="welcome-copy">
+        <p class="eyebrow">Before you begin</p>
+        <h2>There is a story<br><em>waiting for you.</em></h2>
+
+        <p class="body-copy">
+          You may not remember all of these moments.
+          Some of them may have happened before you could
+          even understand what was happening.
+        </p>
+
+        <p class="body-copy">
+          So I kept a few of them here.
+          Not because every moment was perfect,
+          but because every moment was yours.
+        </p>
+
+        <p class="signature">— someone who loved you from the beginning</p>
+      </div>
+
+      <div class="memory-card">
+        <div class="card-inner">
+          <span class="card-label">YOUR STORY</span>
+          <span class="card-age">AGE 00</span>
+          <p>The beginning<br>of everything.</p>
+          <span class="card-year">2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section">
+      <div class="section-number">02</div>
+
+      <div class="timeline-heading">
+        <p class="eyebrow">Your story</p>
+        <h2>A life in<br><em>little moments.</em></h2>
+      </div>
+
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <span class="age">00</span>
+          <div>
+            <span class="timeline-year">2026</span>
+            <h3>The day you arrived.</h3>
+            <p>Some beginnings change everything.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item muted">
+          <span class="age">05</span>
+          <div>
+            <span class="timeline-year">2031</span>
+            <h3>The world was still small.</h3>
+            <p>And somehow, you made it feel enormous.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item muted">
+          <span class="age">10</span>
+          <div>
+            <span class="timeline-year">2036</span>
+            <h3>You started becoming yourself.</h3>
+            <p>A little more independent every year.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item future">
+          <span class="age">17</span>
+          <div>
+            <span class="timeline-year">2043</span>
+            <h3>If you're reading this...</h3>
+            <p>You've finally arrived at the page I made for you.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="closing-inner">
+        <p class="eyebrow">For later</p>
+        <h2>Some things<br>are worth <em>waiting for.</em></h2>
+        <p>
+          There will be photographs, letters, ordinary days,
+          silly stories, and things I was afraid I might forget.
+        </p>
+
+        <button class="open-button" id="openButton">
+          <span>Open the first letter</span>
+          <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with love, before you were 17.</p>
+      <span>2026 — ∞</span>
+    </footer>
+  </main>
+
+  <div class="letter-modal" id="letterModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <article class="letter">
+      <button class="close-button" id="closeButton" aria-label="Close letter">×</button>
+      <p class="eyebrow">LETTER 001 · 2026</p>
+      <h2>Dear <em>you,</em></h2>
+      <p>
+        If you're reading this, then you're 17 now.
+      </p>
+      <p>
+        It's strange to imagine. When I wrote these words,
+        you were still at the beginning of your story.
+      </p>
+      <p>
+        I don't know who you became. I don't know what changed,
+        what stayed, what made you laugh, or what made you cry.
+      </p>
+      <p>
+        But I hope, wherever life has taken you,
+        you know one thing:
+      </p>
+      <p class="highlight">You were loved long before you knew how to ask for it.</p>
+      <p class="signature">See you at 17.<br>— With love</p>
+    </article>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
