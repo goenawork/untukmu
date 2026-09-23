@@ -102,7 +102,7 @@ button { cursor: pointer; }
 
 h1, h2, h3 {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: .95;
   margin: 0;
 }
