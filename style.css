@@ -18,7 +18,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 1.7;
 }
@@ -101,7 +101,7 @@ button { cursor: pointer; }
 }
 
 h1, h2, h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "DM Serif Text", serif;
   font-weight: 400;
   line-height: .95;
   margin: 0;
