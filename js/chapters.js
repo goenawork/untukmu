@@ -1,4 +1,4 @@
-const chapters = [
+const chapterData = [
   {
     "Hari saat kamu lahir.",
     year: 2024,
