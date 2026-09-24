@@ -523,7 +523,42 @@ footer {
     flex-direction: column;
   }
 }
+.chapter {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  align-items: center;
+  border-top: 1px solid var(--line);
+}
 
+.chapter:nth-child(even) { background: var(--paper-light); }
+.chapter:nth-child(odd)  { background: var(--paper); }
+
+/* selang-seling posisi foto */
+.chapter:nth-child(even) .chapter-photo { order: -1; }
+
+.chapter-copy { max-width: 560px; margin-left: 5vw; }
+
+.chapter-photo { margin: 0; justify-self: center; width: min(420px, 90%); }
+.chapter-photo img {
+  width: 100%;
+  display: block;
+  padding: 14px;
+  background: #eee6d9;
+  box-shadow: 0 25px 70px rgba(50,40,30,.08);
+  transform: rotate(-2deg);
+}
+
+/* kalau tidak ada foto, teks tetap di tengah */
+.chapter:not(:has(.chapter-photo)) { grid-template-columns: 1fr; }
+.chapter:not(:has(.chapter-photo)) .chapter-copy { margin: auto; }
+
+@media (max-width: 800px) {
+  .chapter { grid-template-columns: 1fr; gap: 12vw; }
+  .chapter-copy { margin-left: 0; }
+  .chapter:nth-child(even) .chapter-photo { order: 0; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { animation: none; opacity: 1; transform: none; }
