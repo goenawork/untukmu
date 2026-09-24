@@ -4,10 +4,6 @@ const letterModal = document.getElementById("letterModal");
 const closeButton = document.getElementById("closeButton");
 const modalBackdrop = document.getElementById("modalBackdrop");
 
-enterButton.addEventListener("click", () => {
-  document.getElementById("story").scrollIntoView({ behavior: "smooth" });
-});
-
 function openLetter() {
   letterModal.classList.add("open");
   letterModal.setAttribute("aria-hidden", "false");
@@ -20,12 +16,15 @@ function closeLetter() {
   document.body.style.overflow = "";
 }
 
-openButton.addEventListener("click", openLetter);
-closeButton.addEventListener("click", closeLetter);
-modalBackdrop.addEventListener("click", closeLetter);
+enterButton?.addEventListener("click", () => {
+  document.getElementById("story")?.scrollIntoView({ behavior: "smooth" });
+});
+openButton?.addEventListener("click", openLetter);
+closeButton?.addEventListener("click", closeLetter);
+modalBackdrop?.addEventListener("click", closeLetter);
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && letterModal.classList.contains("open")) {
+  if (event.key === "Escape" && letterModal?.classList.contains("open")) {
     closeLetter();
   }
 });
