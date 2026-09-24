@@ -31,7 +31,7 @@ document.addEventListener("keydown", (event) => {
 const chaptersEl = document.getElementById("chapters");
 
 if (typeof chapters !== "undefined" && chaptersEl) {
-  chapters.forEach((c, i) => {
+  chapterData.forEach((c, i) => {
     const num = String(i + 3).padStart(2, "0"); // lanjut dari 03
     const paragraphs = c.text
       .split("\n\n")
