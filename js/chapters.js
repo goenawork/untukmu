@@ -1,6 +1,6 @@
 const chapters = [
   {
-    Ketika kamu lahir,
+    Ketika lahir,
     year: 2024,
     title: Tahun pertamamu.,
     text: Tulis ceritanya di sini. Paragraf kedua dipisah dengan baris kosong.,
