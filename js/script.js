@@ -28,3 +28,27 @@ document.addEventListener("keydown", (event) => {
     closeLetter();
   }
 });
+const chaptersEl = document.getElementById("chapters");
+
+if (typeof chapters !== "undefined" && chaptersEl) {
+  chapters.forEach((c, i) => {
+    const num = String(i + 3).padStart(2, "0"); // lanjut dari 03
+    const paragraphs = c.text
+      .split("\n\n")
+      .map((p) => `<p class="body-copy">${p}</p>`)
+      .join("");
+
+    const section = document.createElement("section");
+    section.className = "chapter section";
+    section.innerHTML = `
+      <div class="section-number">${num}</div>
+      <div class="chapter-copy">
+        <p class="eyebrow">Usia ${String(c.age).padStart(2, "0")} · ${c.year}</p>
+        <h2>${c.title}</h2>
+        ${paragraphs}
+      </div>
+      ${c.image ? `<figure class="chapter-photo"><img src="${c.image}" alt="${c.title}" loading="lazy"></figure>` : ""}
+    `;
+    chaptersEl.appendChild(section);
+  });
+}
