@@ -4,7 +4,7 @@ const chapters = [
     year: 2024,
     title: Tahun pertamamu.,
     text: Tulis ceritanya di sini. Paragraf kedua dipisah dengan baris kosong.,
-    image: "images/usia-01.jpg" // boleh dikosongkan: image: ""
+    image: " " // boleh dikosongkan: image: ""
   },
   {
     Saat usiamu dua tahun,
