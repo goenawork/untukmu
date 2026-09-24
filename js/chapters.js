@@ -1,44 +1,39 @@
 const chapterData = [
   {
-    "Hari saat kamu lahir.",
+    age: 0,
     year: 2024,
-    title: Tahun pertamamu.,
-    text: Tulis ceritanya di sini. Paragraf kedua dipisah dengan baris kosong.,
-    image: " " // boleh dikosongkan: image: ""
+    title: "Hari saat kamu lahir.",
+    text: `Tulis ceritanya di sini.
+
+Paragraf kedua dipisah dengan baris kosong.`,
+    image: ""
   },
   {
-    Saat usiamu dua tahun,
+    age: 2,
     year: 2025,
-    title: Judul usia dua.,
-    text: Isi cerita usia dua.,
+    title: "Saat usiamu dua tahun.",
+    text: `Isi cerita usia dua.`,
     image: ""
   },
   {
-    Tiga tahun usiamu,
+    age: 3,
     year: 2026,
-    title: Judul usia dua.,
-    text: Isi cerita usia dua.,
+    title: "Tiga tahun usiamu.",
+    text: `Isi cerita usia tiga.`,
     image: ""
   },
   {
-    Empat tahun pertumbuhanmu,
+    age: 4,
     year: 2027,
-    title: Judul usia dua.,
-    text: Isi cerita usia dua.,
+    title: "Empat tahun pertumbuhanmu.",
+    text: `Isi cerita usia empat.`,
     image: ""
   },
-  {
-    Lima tahun awal,
+   {
+    age: 5,
     year: 2028,
-    title: Judul usia dua.,
-    text: Isi cerita usia dua.,
+    title: "Lima tahun pertama.",
+    text: `Isi cerita usia empat.`,
     image: ""
-  },
-  {
-    Enam tahun,
-    year: 2029,
-    title: Judul usia dua.,
-    text: Isi cerita usia dua.,
-    image: ""
-  },
+  }
 ];
