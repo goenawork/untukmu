@@ -6,7 +6,6 @@ const chapterData = [
     text: `Dan Nala adalah namamu, sebuah arti "jantung hati" dalam bahasa Sanskerta. Lahir dari seorang ibu yang tangguh dan berpendirian teguh. Pada senin, 18 Maret, Ramadan hari ke tujuh, manakala langit pagi tengah membiru dengan syahdu.
 Kelahiranmu ditandai dengan hari yang kembali cerah setelah sepekan ke belakang hujan badai menyertai hampir di sepanjang hari.
 
-
 Pada setiap 18 Maret, selain akan kita peringati sebagai hari kelahiranmu, akan kita peringati juga sebagai hari pengorbanan ibu yang bertaruh nyawa untuk melahirkanmu ke bumi ini. Maka hari lahirmu adalah hari berterima kasih kepada ibu atas segala pengorbanannya.`,
     image: ""
   },
